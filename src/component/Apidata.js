@@ -24,24 +24,22 @@ function Apidata() {
   };
   return (
     <>
-      <h1 className="heading">Weather Data</h1>
       <div className="card">
-        <div className="container">
-          <input
-            type="search"
-            onKeyDown={(e) => {
-              if (e.key === "Enter") setSearch(e.target.value);
-            }}
-          />
+        <h1 className="heading">Weather Data</h1>
+        <input
+          type="search"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") setSearch(e.target.value);
+          }}
+        />
 
-          <div className="data">
-            <h2>City : {search}</h2>
-            <h1>Temp : {value?.main?.temp}</h1>
-            <h3>
-              min {value?.main?.temp_min} | max {value?.main?.temp_max}
-            </h3>
-            <h3>wind Speed {value?.wind?.speed}</h3>
-          </div>
+        <div className="data">
+          <h2>City : {search}</h2>
+          <h1>Temp : {value?.main?.temp}</h1>
+          <h3>
+            min {value?.main?.temp_min} | max {value?.main?.temp_max}
+          </h3>
+          <h3>wind Speed {value?.wind?.speed}</h3>
         </div>
       </div>
     </>
