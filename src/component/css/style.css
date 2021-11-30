@@ -1,0 +1,22 @@
+.heading {
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 18%;
+  height: 300px;
+  background-color: darkturquoise;
+  margin-left: 41%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 20px 70px;
+}
+.data {
+  padding: 20px 0px;
+}
